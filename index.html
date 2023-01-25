@@ -168,6 +168,7 @@
 
         if(result==c ){
             accurecy =parseInt(100/attemp);
+            if(accurecy>33){
             score.innerHTML="You Win & Accuracy: "+accurecy+"%";
             score.style.backgroundColor="green";
             score.style.color="white";
@@ -175,6 +176,7 @@
             submitBtn.style.backgroundColor="grey"
             document.querySelector('#fo').reset();
             return;
+            }
         }
         else{
             // attempN();
